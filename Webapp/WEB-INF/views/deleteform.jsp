@@ -5,14 +5,15 @@
 <title>방명록</title>
 </head>
 <body>
-	<form method="post" action="">
-	<input type='hidden' name="no" value="">
+	<form method="post" action="/Guestbook3/delete">
+	<input type='hidden' name="no" value="${vo.no }">
 	<table>
 		<tr>
 			<td>비밀번호</td>
 			<td><input type="password" name="password"></td>
 			<td><input type="submit" value="확인"></td>
-			<td><a href="/guestbook2/index">메인으로 돌아가기</a></td>
+			<td style="color:Blue">${msg }</td>
+			<td><a href="/Guestbook3/index">메인으로 돌아가기</a></td>
 		</tr>
 	</table>
 	</form>

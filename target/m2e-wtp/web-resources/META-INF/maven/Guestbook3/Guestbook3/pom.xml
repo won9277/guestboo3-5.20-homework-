@@ -5,9 +5,11 @@
 	<artifactId>Guestbook3</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+
 	<properties>
 		<org.springframework-version>3.2.1.RELEASE</org.springframework-version>
 	</properties>
+
 	<dependencies>
 		<!-- spring -->
 		<dependency>
@@ -27,6 +29,7 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
+
 		<!-- jstl -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -40,7 +43,29 @@
 			<artifactId>ojdbc6</artifactId>
 			<version>11.1.0.7.0</version>
 		</dependency>
+
+		<!-- spring jdbc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<!-- spring orm -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>3.1.0.RELEASE</version>
+		</dependency>
+		<!-- iBatis -->
+		<dependency>
+			<groupId>org.apache.ibatis</groupId>
+			<artifactId>ibatis-sqlmap</artifactId>
+			<version>2.3.4.726</version>
+		</dependency>
+
+
 	</dependencies>
+
 	<repositories>
 		<repository>
 			<id>oracle</id>
@@ -48,9 +73,6 @@
 			<url>http://maven.jahia.org/maven2</url>
 		</repository>
 	</repositories>
-
-
-
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
